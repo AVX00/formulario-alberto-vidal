@@ -26,4 +26,18 @@ describe("Given a Input component", () => {
       expect(input).toHaveFocus();
     });
   });
+
+  describe("When it's rendered with type number", () => {
+    test("Then an user shouldnt be able to write letters", () => {
+      const label = "test";
+      const writed = "holahola";
+      const type = "number";
+      render(<Input type={type} label={label}></Input>);
+      const input = screen.queryByPlaceholderText(label);
+
+      userEvent.type(input, writed);
+
+      expect(input.value).toBe("");
+    });
+  });
 });
