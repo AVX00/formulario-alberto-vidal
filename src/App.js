@@ -1,5 +1,7 @@
+import DataContextProvider from "./contexts/DataContext/DataContextProvider";
+
 function App() {
-    return <></>;
+    return <DataContextProvider></DataContextProvider>;
 }
 
 export default App;
