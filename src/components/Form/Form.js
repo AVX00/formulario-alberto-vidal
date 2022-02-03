@@ -4,6 +4,10 @@ const Form = ({ children, actionOnSubmit }) => {
     actionOnSubmit();
   };
 
-  return <form onSubmit={submitAction}>{children}</form>;
+  return (
+    <form onSubmit={submitAction} className="form">
+      {children}
+    </form>
+  );
 };
 export default Form;
