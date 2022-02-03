@@ -1,9 +1,11 @@
 const Input = ({ label, type }) => {
   return (
-    <>
-      <label htmlFor={label}>{label}</label>
-      <input id={label} name={label} type={type} placeholder={label}></input>);
-    </>
+    <div className="row">
+      <label className="text-light" htmlFor={label}>
+        {label}
+      </label>
+      <input id={label} name={label} type={type} placeholder={label}></input>
+    </div>
   );
 };
 

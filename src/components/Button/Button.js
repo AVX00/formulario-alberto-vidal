@@ -1,6 +1,6 @@
 const Button = ({ type, text }) => {
   return (
-    <button className="btn" type={type}>
+    <button className="btn btn-primary row" type={type}>
       {text}
     </button>
   );
