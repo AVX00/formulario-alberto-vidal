@@ -5,7 +5,7 @@ const Form = ({ children, actionOnSubmit }) => {
   };
 
   return (
-    <form onSubmit={submitAction} className="form">
+    <form onSubmit={submitAction} className="form row">
       {children}
     </form>
   );
