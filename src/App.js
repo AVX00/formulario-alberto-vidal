@@ -1,6 +1,6 @@
 import DataContextProvider from "./contexts/DataContext/DataContextProvider";
-import Form from "./components/Form/Form";
-import Button from "./components/Button/Button";
+import PersonalData from "./components/PersonalData/PersonalData";
+import "./App.css";
 function App() {
   const action = () => {
     console.log("hola");
@@ -8,9 +8,9 @@ function App() {
 
   return (
     <DataContextProvider>
-      <Form actionOnSubmit={action}>
-        <Button type="submit" />
-      </Form>
+      <div className="container bg-dark">
+        <PersonalData formAction={action} />
+      </div>
     </DataContextProvider>
   );
 }
